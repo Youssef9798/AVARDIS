@@ -1,0 +1,90 @@
+<div class="left-menu style-1">
+  <ul>
+    <p class="label-cat">Main</p>
+    <li>
+      <a href="/" class="<%= path==='/' ? 'active' : '' %>"
+        ><i class="fas fa-bullhorn ic"></i>Dashboard</a
+      >
+    </li>
+    <p class="label-cat">Tables</p>
+    <li>
+      <a
+        href="/tables/users-table"
+        class="<%= path==='/users-table' ? 'active' : '' %>"
+        ><i class="fas fa-table ic"></i>Users Table</a
+      >
+    </li>
+    <li>
+      <a
+        href="/tables/users-log"
+        class="<%= path==='/users-log' ? 'active' : '' %>"
+        ><i class="fas fa-table ic"></i>Users Logs Table</a
+      >
+    </li>
+    <li>
+      <a
+        href="/tables/cars-table"
+        class="<%= path==='/cars-table' ? 'active' : '' %>"
+        ><i class="fas fa-table ic"></i>Cars Table</a
+      >
+    </li>
+    <li>
+      <a
+        href="/tables/devices-table"
+        class="<%= path==='/devices-table' ? 'active' : '' %>"
+        ><i class="fas fa-table ic"></i>Devices Table</a
+      >
+    </li>
+    <li>
+      <a
+        href="/tables/pid-table"
+        class="<%= path==='/pid-table' ? 'active' : '' %>"
+        ><i class="fas fa-table ic"></i>PID Table</a
+      >
+    </li>
+    <li>
+      <a
+        href="/tables/dtc-table"
+        class="<%= path==='/dtc-table' ? 'active' : '' %>"
+        ><i class="fas fa-table ic"></i>DTC Table</a
+      >
+    </li>
+    <p class="label-cat">Entries</p>
+    <li>
+      <a
+        href="/admin/add-user"
+        class="<%= path==='/add-user' ? 'active' : '' %>"
+        ><i class="fas fa-users ic"></i>Add User</a
+      >
+    </li>
+    <li>
+      <a href="/admin/add-car" class="<%= path==='/add-car' ? 'active' : '' %>"
+        ><i class="fas fa-car ic"></i>Add Car</a
+      >
+    </li>
+    <li>
+      <a
+        href="/admin/add-device"
+        class="<%= path==='/add-device' ? 'active' : '' %>"
+        ><i class="fa fa-hdd ic"></i>Add Device</a
+      >
+    </li>
+    <li>
+      <a
+        href="/admin/add-emgCon"
+        class="<%= path==='/add-emgCon' ? 'active' : '' %>"
+        ><i class="fas fa-hand-holding-medical ic"></i>Add Emergency Contact</a
+      >
+    </li>
+    <li>
+      <a href="/admin/add-dtc" class="<%= path==='/add-dtc' ? 'active' : '' %>"
+        ><i class="far fa-file-excel ic"></i>Add DTC</a
+      >
+    </li>
+    <li>
+      <a href="/admin/add-pid" class="<%= path==='/add-pid' ? 'active' : '' %>"
+        ><i class="fas fa-toolbox ic"></i>Add Diagnostics PID</a
+      >
+    </li>
+  </ul>
+</div>

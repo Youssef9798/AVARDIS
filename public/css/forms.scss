@@ -1,0 +1,331 @@
+$lightgreen: #a5e65a;
+$grey: #5f7174;
+$lightgrey: #6a888c;
+$greyd1: #212d40;
+$greyd2: #11151c;
+$greyd3: #111824;
+$tealblue: #37718e;
+$mirage: #201932;
+$royalPurple: #6b4ee6;
+$pictonBlue: #2bbef2;
+$lightblue: #00a6c0;
+$sky: #32d9cb;
+$brilliantRose: #ea37a3;
+$nice: #316672;
+$nice2: #4ba82c;
+$nice3: #d90080;
+$nice4: #f09700;
+
+.form-background {
+  background: url('../images/waves-overlay.png') no-repeat 100% fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.container-login {
+  width: 100vw;
+  background: $nice;
+  height: 100vh;
+  //float: left;
+}
+
+.form-background-2 {
+  width: 100%;
+  height: 100%;
+  float: left;
+  background: url('../images/denys-nevozhai-7nrsVjvALnA-unsplash-overlay.png') no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.login-container {
+  .login-message {
+    width: 70%;
+    float: left;
+    height: 100%;
+    /* display: inline-flex;
+        align-items: center; */
+    padding: 30vh 50px;
+
+    h1 {
+      font-family: UbuntuM;
+      color: #ffffff;
+      font-size: 4vw;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+      text-align: left;
+      padding-bottom: 10px;
+    }
+
+    p {
+      color: #ffffff;
+      font-family: UbuntuR;
+      font-size: 22px;
+      width: 60%;
+    }
+  }
+
+  .signup-form {
+    .login-bottom {
+      padding: 5% 0 !important;
+
+      .have-btn {
+        font-size: 12.5px;
+        color: $nice;
+        font-family: NotoSans;
+      }
+    }
+  }
+
+  .login-form {
+    width: 30%;
+    float: left;
+    background: #fdfdfd;
+    height: 100vh;
+    box-shadow: -5px 0px 2px 0px rgba(0, 0, 0, 0.5);
+
+    .login-bottom {
+      width: 100%;
+      float: left;
+      height: 80%;
+      /* display: flex;
+            flex-direction: column;
+            align-self: start;
+            align-items: center; */
+      padding: 10% 0;
+
+      .login-header {
+        width: 100%;
+        float: left;
+        padding: 60px 0;
+        text-align: center;
+
+        h1 {
+          font-family: UbuntuM;
+          color: $nice;
+          font-size: 25px;
+          width: 100%;
+
+          &::after {
+            content: '';
+            display: block;
+            background: $nice;
+            width: 100%;
+            height: 4px;
+            margin: 45px 0;
+          }
+        }
+      }
+
+      .login-margin {
+        width: 80%;
+        margin: auto;
+        padding: 50% 0;
+      }
+
+      .deep-div {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding: 20% 0;
+
+        a {
+          text-decoration: none;
+          border: 0.5px solid $nice;
+          padding: 6px 25px;
+          border-radius: 4px;
+          cursor: pointer;
+          background: #ffffff;
+          transition: 0.3s;
+
+          &:hover {
+            background: $nice;
+            color: #ffffff;
+            transition: 0.3s;
+          }
+        }
+      }
+
+      .login-form-row {
+        width: 100%;
+        float: left;
+        margin: 5px 0;
+
+        .user-icon {
+          width: 10%;
+          float: left;
+          color: $nice;
+          background: #ffffff;
+          padding: 8px 5px;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          border-right: 0;
+          text-align: center;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+
+        .lock-icon {
+          width: 10%;
+          float: left;
+          color: $nice;
+          background: #ffffff;
+          padding: 8px 5px;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          border-right: 0;
+          text-align: center;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+
+        label {
+          font-family: NotoSans;
+          font-size: 13px;
+          color: $nice;
+          padding-bottom: 4px;
+          width: 100%;
+          float: left;
+        }
+
+        input {
+          width: 90%;
+          float: left;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          padding: 9.5px 10px;
+          font-family: UbuntuM;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          outline-color: $nice;
+        }
+
+        .signup-btn {
+          font-family: NotoSans;
+          font-size: 13px;
+          color: $nice;
+          text-align: left;
+        }
+
+        button {
+          width: 100%;
+          margin: 25px 0;
+          float: left;
+          padding: 7px 0;
+          background: $nice;
+          color: #ffffff;
+          outline: none;
+          border: 0;
+          font-family: NotoSans;
+          font-size: 13px;
+          box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.5);
+          transition: 0.4s;
+
+          &:hover {
+            background: #295f6b;
+            cursor: pointer;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-control {
+  width: 100%;
+  float: left;
+  box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
+    0 30px 60px -30px rgba(0, 0, 0, 0.3),
+    0 -18px 60px -10px rgba(0, 0, 0, 0.025);
+  background: #fdfdfd;
+  border: solid 1px #e7e6e6;
+  border-radius: 10px;
+  padding: 30px 25px;
+  min-height: 250px;
+
+  .form-row {
+    width: 100%;
+    float: left;
+    margin: 5px 0;
+
+    label {
+      font-size: 13px;
+      font-family: NotoSans;
+      width: 100%;
+      float: left;
+      padding-bottom: 2px;
+    }
+
+    input {
+      width: 100%;
+      float: left;
+      padding: 8px 10px;
+      border: 1px solid #d1d1d1;
+      border-radius: 4px;
+      transition: 0.4s;
+      font-family: NotoSans;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      outline: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        box-shadow: 0 0 5px $tealblue;
+        border: 1px solid $tealblue;
+      }
+
+      &[type='number'] {
+        -moz-appearance: textfield;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+
+    textarea {
+      width: 100%;
+      float: left;
+      padding: 8px 10px;
+      border: 1px solid #d1d1d1;
+      border-radius: 4px;
+      transition: 0.4s;
+      font-family: NotoSans;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      outline: none;
+      resize: none;
+      min-height: 80px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        box-shadow: 0 0 5px $tealblue;
+        border: 1px solid $tealblue;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    float: left;
+    padding: 6px 0;
+    margin-top: 15px;
+    background: $nice;
+    font-size: 14px;
+    font-family: NotoSans;
+    color: #ffffff;
+    border: 0;
+    transition: 0.3s;
+
+    &:hover {
+      background: rgb(72, 92, 122);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+}

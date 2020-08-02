@@ -1,0 +1,38 @@
+<%- include('../includes/header.ejs') %>
+        <div class="container-login">
+            <div class="form-background-2 login-container">
+                <!-- <div class="grid"> -->
+                <div class="login-message">
+                    <h1>AVARDIS</h1>
+                    <p>AVARDIS is an integrated device of hardware and software resources helps you by tracking your car and monitor your car performance and detect car's diagnostics</p>
+                </div>
+                <div class="login-form">
+                    <div class="login-bottom">
+                        <div class="login-header">
+                            <h1>Welcome to AVARDIS Adminsitration Panel</h1>
+                        </div>
+                        <div class="login-margin">
+                            <form action="/login" method="POST">
+                                <div class="login-form-row">
+                                    <div class="user-icon"><i class="fas fa-user"></i></div><input type="email" name="email" placeholder="Enter your email">
+                                </div>
+            
+                                <div class="login-form-row">
+                                    <div class="lock-icon"><i class="fas fa-lock"></i></div><input type="password" name="password" placeholder="Enter your password">
+                                </div>
+                                <div class="login-form-row">
+                                    <button type="submit">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="deep-div">
+                            <div class="login-form-row">
+                                <a href="/signup" class="signup-btn">Create new account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+<%- include('../includes/end.ejs') %>

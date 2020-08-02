@@ -1,0 +1,39 @@
+<%- include('../includes/header.ejs') %>
+    <%-include('../includes/top-bar.ejs') %>
+    <div class="container">
+        <%-include('../includes/left-menu.ejs') %>
+        <div class="main-backgournd form-background style-1">
+            <div class="grid">
+                <div class="page-title">
+                    <h1>Add Cars</h1>
+                </div>
+                <div class="form-control">
+                    <form action="/admin/add-car" method="POST">
+                        
+                        <div class="form-row">
+                            <label for="plateNo">Plate Number</label>
+                            <input type="text" name="plateNo" id="plateno" placeholder="Type plate number here...">
+                        </div>
+    
+                        <div class="form-row">
+                            <label for="carModel">Car Model</label>
+                            <input type="text" name="carModel" id="carmodel" placeholder="Type car model here...">
+                        </div>
+                        
+                        <div class="form-row">
+                            <label for="color">Color</label>
+                            <input type="text" name="color" id="color" placeholder="Type color here...">
+                        </div>
+                        
+                        <div class="form-row">
+                            <label for="userSSN">User SSN</label>
+                            <input type="number" name="userSNN" id="userssn" placeholder="Type user SSN here...">
+                        </div>
+    
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include('../includes/end.ejs') %>

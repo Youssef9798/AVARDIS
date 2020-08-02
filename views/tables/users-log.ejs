@@ -1,0 +1,56 @@
+<%- include('../includes/header.ejs') %> <%-include('../includes/top-bar.ejs')
+%>
+<div class="container">
+  <%-include('../includes/left-menu.ejs') %>
+  <div class="main-backgournd form-background style-1">
+    <div class="grid">
+      <div class="page-title">
+        <h1>Users Logs Table</h1>
+      </div>
+      <div class="table-container">
+        <div class="table">
+          <div class="table-header">
+            <div class="table-header-cell">
+              Email
+            </div>
+            <div class="table-header-cell">
+              Password
+            </div>
+            <div class="table-header-cell">
+              Location
+            </div>
+            <div class="table-header-cell">
+              Date and Time
+            </div>
+          </div>
+          <% if (usersLogsData.length > 0) { %>
+          <div class="table-body">
+            <% usersLogsData.forEach(user => { %>
+            <div class="table-row">
+              <div class="table-body-cell dec-cel">
+                <%= user.email %>
+              </div>
+              <div class="table-body-cell dec-cel">
+                <%= user.password %>
+              </div>
+              <div class="table-body-cell">
+                <%= user.location %>
+              </div>
+              <div class="table-body-cell">
+                <%= user.createdAt %>
+              </div>
+            </div>
+            <% }); %>
+          </div>
+          <% } %>
+        </div>
+        <% if (usersLogsData.length == 0){ %>
+        <div class="empty-table">
+          <p>No Users data saved yet</p>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('../includes/end.ejs') %>

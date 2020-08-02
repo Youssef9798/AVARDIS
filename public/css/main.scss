@@ -1,0 +1,424 @@
+$lightgreen: #a5e65a;
+$grey: #5f7174;
+$lightgrey: #6a888c;
+$greyd1: #212d40;
+$greyd2: #11151c;
+$greyd3: #111824;
+$tealblue: #37718e;
+$mirage: #201932;
+$royalPurple: #6b4ee6;
+$pictonBlue: #2bbef2;
+$lightblue: #00a6c0;
+$sky: #32d9cb;
+$brilliantRose: #ea37a3;
+$nice: #316672;
+$nice2: #4ba82c;
+$nice3: #d90080;
+$nice4: #f09700;
+
+@font-face {
+  font-family: 'UbuntuM';
+  src: url('../fonts/Ubuntu/Ubuntu-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'UbuntuR';
+  src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'UbuntuB';
+  src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('../fonts/Noto_Sans_KR/NotoSansKR-Medium.otf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.style-1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 0;
+}
+
+.style-1::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.style-1::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $greyd1;
+  height: 10px !important;
+}
+
+.container {
+  width: 100%;
+  float: left;
+  background: #ffffff;
+  min-height: 92.4vh;
+  max-height: 92.4vh;
+
+  .grid {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+.main-backgournd {
+  //background: #f5f5f5;//$greyd3;
+  width: 80%;
+  float: left;
+  max-height: 92.4vh;
+  overflow-y: auto;
+  min-height: 92.4vh;
+  padding-bottom: 50px;
+
+  .page-title {
+    width: 100%;
+    float: left;
+    padding: 15px 0;
+
+    h1 {
+      color: $nice;
+      font-family: NotoSans;
+      font-size: 26px;
+    }
+  }
+
+  .page-content {
+    width: 100%;
+    float: left;
+
+    .welcome-header {
+      box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      padding: 10px 15px;
+
+      h1 {
+        font-size: 14px;
+        font-family: UbuntuR;
+        color: #5d5d5d;
+      }
+    }
+
+    .statistic-box {
+      width: 31.3%;
+      float: left;
+      margin: 30px 9px;
+      min-height: 150px;
+      height: 100%;
+      max-height: 150px;
+      border-radius: 4px;
+      box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+      color: #ffffff;
+      font-family: NotoSans;
+      text-align: center;
+      position: relative;
+      transition: 0.4s;
+      z-index: 1;
+
+      h1 {
+        padding: 20px 0;
+      }
+    }
+
+    .box-1 {
+      background: linear-gradient(90deg, $nice, $nice);
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(90deg, #2d7382, #6b4ee6);
+        z-index: -1;
+        transition: opacity 0.5s linear;
+        opacity: 0;
+      }
+
+      &:hover {
+        transition: 0.4s;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    .box-2 {
+      background: linear-gradient(90deg, $lightgreen, $lightgreen);
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(90deg, #a5e65a, $nice2);
+        z-index: -1;
+        transition: opacity 0.5s linear;
+        opacity: 0;
+      }
+
+      &:hover {
+        transition: 0.4s;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    .box-3 {
+      background: linear-gradient(90deg, $nice3, $nice3);
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(90deg, #d90050, #d90080);
+        z-index: -1;
+        transition: opacity 0.5s linear;
+        opacity: 0;
+      }
+
+      &:hover {
+        transition: 0.4s;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    .box-4 {
+      background: linear-gradient(90deg, $royalPurple, $royalPurple);
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(90deg, #6b4ee6, rgb(76, 52, 184));
+        z-index: -1;
+        transition: opacity 0.5s linear;
+        opacity: 0;
+      }
+
+      &:hover {
+        transition: 0.4s;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    .recent-activities {
+      width: 100%;
+      float: left;
+      box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+      min-height: 280px;
+
+      .activities-bar {
+        width: 100%;
+        float: left;
+        padding: 10px 15px;
+        border-bottom: 1px solid #ededed;
+
+        h1 {
+          font-size: 22px;
+          font-family: NotoSans;
+          color: $nice;
+        }
+      }
+
+      .activity-list {
+        width: 100%;
+        float: left;
+        //padding: 15px 15px;
+        overflow-y: auto;
+        max-height: 225px;
+        height: 225px;
+
+        .empty-activity {
+          font-family: UbuntuM;
+          font-size: 15px;
+          color: $nice;
+          text-align: center;
+          padding: 50px 0;
+        }
+
+        ul {
+          list-style: none;
+
+          li {
+            padding: 10px 15px;
+            border-bottom: 1px solid #e2e2e2;
+
+            h2 {
+              font-size: 15px;
+              font-family: UbuntuR;
+              margin-bottom: 10px;
+              color: #6d6d6d;
+            }
+
+            p {
+              font-size: 12px;
+              padding: 2px 10px;
+              font-family: NotoSans;
+              color: #4d4d4d;
+
+              span {
+                color: #ea37a3;
+              }
+            }
+          }
+
+          li:nth-child(2n) {
+            background: #e2e2e2;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-container {
+  width: 100%;
+  float: left;
+  box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
+    0 30px 60px -30px rgba(0, 0, 0, 0.3),
+    0 -18px 60px -10px rgba(0, 0, 0, 0.025);
+  background: #fdfdfd;
+  border: solid 1px #e7e6e6;
+  border-radius: 10px;
+  padding: 0px 0px;
+
+  .table {
+    width: 100%;
+    display: table;
+
+    .table-header {
+      display: table-header-group;
+      background: $lightgrey;
+
+      .table-header-cell {
+        border-bottom: 1px solid #d1d1d1;
+        padding: 10px;
+        display: table-cell;
+        font-family: NotoSans;
+        color: #ffffff;
+        text-align: center;
+        border-right: 1px solid #ededed;
+
+        &:first-child {
+          border-top-left-radius: 10px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 10px;
+        }
+      }
+
+      .dec-cel {
+        word-wrap: break-word !important;
+        text-align: left;
+      }
+    }
+
+    .table-body {
+      display: table-row-group;
+
+      .table-row {
+        display: table-row;
+
+        .table-body-cell {
+          padding: 10px;
+          display: table-cell;
+          font-family: UbuntuR;
+          text-align: center;
+          font-size: 14px;
+          border-right: 1px solid #ededed;
+          border-bottom: 1px solid #ededed;
+
+          &:last-child {
+            border-right: 0;
+          }
+        }
+
+        .dec-cel {
+          word-break: break-all;
+          word-wrap: break-word;
+          text-align: left;
+        }
+
+        &:nth-child(odd) {
+          background: #e1e1e1;
+        }
+      }
+    }
+  }
+
+  .empty-table {
+    width: 100%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    padding: 50px 25px;
+    font-family: NotoSans;
+    color: $lightgrey;
+  }
+}
+
+.error-page {
+  width: 100%;
+  float: left;
+  height: 92.4vh;
+  background: url('../images/waves-overlay.png') no-repeat fixed 100%;
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+    font-family: NotoSans;
+    font-size: 55px;
+    text-align: left;
+    padding: 30px 0 15px 0;
+    color: $mirage;
+  }
+
+  p {
+    font-family: NotoSans;
+    font-size: 20px;
+    text-align: left;
+    color: $mirage;
+  }
+
+  a {
+    font-family: NotoSans;
+    font-size: 14px;
+    text-align: left;
+    float: left;
+    margin-top: 15px;
+    color: $royalPurple;
+  }
+}

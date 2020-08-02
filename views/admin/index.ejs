@@ -1,0 +1,66 @@
+<%- include('../includes/header.ejs') %>
+        <%-include('../includes/top-bar.ejs') %>
+        <div class="container">
+            <%-include('../includes/left-menu.ejs') %>
+            <div class="main-backgournd style-1">
+                <div class="grid">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                    <div class="page-content">
+                        <div class="welcome-header">
+                            <h1>Hello Mr. <%= adminData %></h1>
+                        </div>
+                        <div class="statistic-box box-1">
+                            <h1><%= usersData.length %></h1>
+                            <p>Total Users</p>
+                        </div>
+                        <div class="statistic-box box-2">
+                            <h1><%= devicesData.length %></h1>
+                            <p>Total Devices</p>
+                        </div>
+                        <div class="statistic-box box-3">
+                            <h1><%= carsData.length %></h1>
+                            <p>Total Cars</p>
+                        </div>
+                        <!-- <div class="statistic-box box-4">
+                            <h1>0</h1>
+                            <p>New Customers</p>
+                        </div> -->
+                        <div class="recent-activities">
+                            <div class="activities-bar">
+                                <h1>Recent Activity</h1>
+                            </div>
+                            <div class="activity-list style-1">
+                                <% if(usersData.length > 0 ) { %>
+                                    <ul>
+                                        <% usersData.forEach(user => { %>
+                                            <li>
+                                                
+                                                <h2><%= user.FirstName %> <%= user.LastName %></h2>
+                                                <p class="user-createdate">Created Time: <span><%= user.createdAt %></span></p>
+                                                <p class="user-ssn">User Social Security Number: <span><%= user.SSN %></span></p>
+                                                <% carsData.forEach(car => { %>
+                                                    <% if (user.SSN == car.userSSN ) { %>
+                                                        <p class="car-plate">Car Plate No: <span><%= car.plateNo %></span></p>
+                                                        <% devicesData.forEach(device => { %>
+                                                            <% if (device.carPlate == car.plateNo ) { %>
+                                                                <p>Device MAC-ADDRESS: <span><%= device.macAddress %></span></p>    
+                                                            <% } %>    
+                                                        <% }); %>
+                                                    <% } %>
+                                                <% }); %>
+                                            </li>
+                                        <% }); %>
+                                    </ul>
+                                <% } else { %>
+                                    <p class="empty-activity">No activities happened yet</p>    
+                                <% } %>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<%- include('../includes/end.ejs') %>

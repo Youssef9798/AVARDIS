@@ -1,0 +1,38 @@
+GET http://localhost:3000/api/users
+
+###
+
+POST http://localhost:3000/api/signup-user-data
+Content-Type: application/json
+
+{
+    "ssn": "297041600187",
+    "firstName": "Abdallah",
+    "lastName": "Muhamed",
+    "email": "test@test.com",
+    "password": "123456",
+    "address": "Cairo",
+    "phoneNo": "01287349099",
+    "bloodType": "A+"
+}
+
+####
+
+POST http://localhost:3000/api/signup-car-data
+Content-Type: application/json
+
+{
+    "plateNo": "ABC123",
+    "carModel": "Chevoreulte Optera 2015",
+    "color": "Black"
+}
+
+###
+
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "12345"
+}

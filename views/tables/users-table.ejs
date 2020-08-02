@@ -1,0 +1,68 @@
+<%- include('../includes/header.ejs') %> <%-include('../includes/top-bar.ejs')
+%>
+<div class="container">
+  <%-include('../includes/left-menu.ejs') %>
+  <div class="main-backgournd form-background style-1">
+    <div class="grid">
+      <div class="page-title">
+        <h1>Users Table</h1>
+      </div>
+      <div class="table-container">
+        <div class="table">
+          <div class="table-header">
+            <div class="table-header-cell">
+              SSN
+            </div>
+            <div class="table-header-cell">
+              Full Name
+            </div>
+            <div class="table-header-cell">
+              Email
+            </div>
+            <div class="table-header-cell">
+              Address
+            </div>
+            <div class="table-header-cell">
+              Phone Number
+            </div>
+            <div class="table-header-cell">
+              Blood Type
+            </div>
+          </div>
+          <% if (usersData.length > 0) { %>
+          <div class="table-body">
+            <% usersData.forEach(user => { %>
+            <div class="table-row">
+              <div class="table-body-cell dec-cel">
+                <%= user.SSN %>
+              </div>
+              <div class="table-body-cell dec-cel">
+                <%= user.FirstName %> <%= user.LastName %>
+              </div>
+              <div class="table-body-cell dec-cel">
+                <%= user.email %>
+              </div>
+              <div class="table-body-cell dec-cel">
+                <%= user.address %>
+              </div>
+              <div class="table-body-cell">
+                <%= user.phoneNo %>
+              </div>
+              <div class="table-body-cell">
+                <%= user.bloodType %>
+              </div>
+            </div>
+            <% }); %>
+          </div>
+          <% } %>
+        </div>
+        <% if (usersData.length == 0){ %>
+        <div class="empty-table">
+          <p>No Users data saved yet</p>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('../includes/end.ejs') %>

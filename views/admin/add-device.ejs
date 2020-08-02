@@ -1,0 +1,26 @@
+<%- include('../includes/header.ejs') %>
+    <%-include('../includes/top-bar.ejs') %>
+    <div class="container">
+        <%-include('../includes/left-menu.ejs') %>
+        <div class="main-backgournd form-background style-1">
+            <div class="grid">
+                <div class="page-title">
+                    <h1>Add Devices</h1>
+                </div>
+                <div class="form-control">
+                    <form action="/admin/add-device" method="POST">
+                        <div class="form-row">
+                            <label for="macaddress">Device MAC-ADDRESS</label>
+                            <input type="text" name="macAddress" id="macaddress" placeholder="Type device MAC address here...">
+                        </div>
+                        <div class="form-row">
+                            <label for="carplate">Car Plate Number</label>
+                            <input type="text" name="carPlate" id="carplate" placeholder="Type car plate number here...">
+                        </div>
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include('../includes/end.ejs') %>

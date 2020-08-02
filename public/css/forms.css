@@ -1,0 +1,257 @@
+.form-background {
+  background: url("../images/waves-overlay.png") no-repeat 100% fixed;
+  background-position: center;
+  background-size: cover; }
+
+.container-login {
+  width: 100vw;
+  background: #316672;
+  height: 100vh; }
+
+.form-background-2 {
+  width: 100%;
+  height: 100%;
+  float: left;
+  background: url("../images/denys-nevozhai-7nrsVjvALnA-unsplash-overlay.png") no-repeat fixed;
+  background-position: center;
+  background-size: cover; }
+
+.login-container .login-message {
+  width: 70%;
+  float: left;
+  height: 100%;
+  /* display: inline-flex;
+        align-items: center; */
+  padding: 30vh 50px; }
+  .login-container .login-message h1 {
+    font-family: UbuntuM;
+    color: #ffffff;
+    font-size: 4vw;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    text-align: left;
+    padding-bottom: 10px; }
+  .login-container .login-message p {
+    color: #ffffff;
+    font-family: UbuntuR;
+    font-size: 22px;
+    width: 60%; }
+
+.login-container .signup-form .login-bottom {
+  padding: 5% 0 !important; }
+  .login-container .signup-form .login-bottom .have-btn {
+    font-size: 12.5px;
+    color: #316672;
+    font-family: NotoSans; }
+
+.login-container .login-form {
+  width: 30%;
+  float: left;
+  background: #fdfdfd;
+  height: 100vh;
+  -webkit-box-shadow: -5px 0px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -5px 0px 2px 0px rgba(0, 0, 0, 0.5); }
+  .login-container .login-form .login-bottom {
+    width: 100%;
+    float: left;
+    height: 80%;
+    /* display: flex;
+            flex-direction: column;
+            align-self: start;
+            align-items: center; */
+    padding: 10% 0; }
+    .login-container .login-form .login-bottom .login-header {
+      width: 100%;
+      float: left;
+      padding: 60px 0;
+      text-align: center; }
+      .login-container .login-form .login-bottom .login-header h1 {
+        font-family: UbuntuM;
+        color: #316672;
+        font-size: 25px;
+        width: 100%; }
+        .login-container .login-form .login-bottom .login-header h1::after {
+          content: '';
+          display: block;
+          background: #316672;
+          width: 100%;
+          height: 4px;
+          margin: 45px 0; }
+    .login-container .login-form .login-bottom .login-margin {
+      width: 80%;
+      margin: auto;
+      padding: 50% 0; }
+    .login-container .login-form .login-bottom .deep-div {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding: 20% 0; }
+      .login-container .login-form .login-bottom .deep-div a {
+        text-decoration: none;
+        border: 0.5px solid #316672;
+        padding: 6px 25px;
+        border-radius: 4px;
+        cursor: pointer;
+        background: #ffffff;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .login-container .login-form .login-bottom .deep-div a:hover {
+          background: #316672;
+          color: #ffffff;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+    .login-container .login-form .login-bottom .login-form-row {
+      width: 100%;
+      float: left;
+      margin: 5px 0; }
+      .login-container .login-form .login-bottom .login-form-row .user-icon {
+        width: 10%;
+        float: left;
+        color: #316672;
+        background: #ffffff;
+        padding: 8px 5px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-right: 0;
+        text-align: center;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px; }
+      .login-container .login-form .login-bottom .login-form-row .lock-icon {
+        width: 10%;
+        float: left;
+        color: #316672;
+        background: #ffffff;
+        padding: 8px 5px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-right: 0;
+        text-align: center;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px; }
+      .login-container .login-form .login-bottom .login-form-row label {
+        font-family: NotoSans;
+        font-size: 13px;
+        color: #316672;
+        padding-bottom: 4px;
+        width: 100%;
+        float: left; }
+      .login-container .login-form .login-bottom .login-form-row input {
+        width: 90%;
+        float: left;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 9.5px 10px;
+        font-family: UbuntuM;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        outline-color: #316672; }
+      .login-container .login-form .login-bottom .login-form-row .signup-btn {
+        font-family: NotoSans;
+        font-size: 13px;
+        color: #316672;
+        text-align: left; }
+      .login-container .login-form .login-bottom .login-form-row button {
+        width: 100%;
+        margin: 25px 0;
+        float: left;
+        padding: 7px 0;
+        background: #316672;
+        color: #ffffff;
+        outline: none;
+        border: 0;
+        font-family: NotoSans;
+        font-size: 13px;
+        -webkit-box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.5);
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s; }
+        .login-container .login-form .login-bottom .login-form-row button:hover {
+          background: #295f6b;
+          cursor: pointer;
+          -webkit-transition: 0.4s;
+          -o-transition: 0.4s;
+          transition: 0.4s; }
+
+.form-control {
+  width: 100%;
+  float: left;
+  -webkit-box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3), 0 -18px 60px -10px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3), 0 -18px 60px -10px rgba(0, 0, 0, 0.025);
+  background: #fdfdfd;
+  border: solid 1px #e7e6e6;
+  border-radius: 10px;
+  padding: 30px 25px;
+  min-height: 250px; }
+  .form-control .form-row {
+    width: 100%;
+    float: left;
+    margin: 5px 0; }
+    .form-control .form-row label {
+      font-size: 13px;
+      font-family: NotoSans;
+      width: 100%;
+      float: left;
+      padding-bottom: 2px; }
+    .form-control .form-row input {
+      width: 100%;
+      float: left;
+      padding: 8px 10px;
+      border: 1px solid #d1d1d1;
+      border-radius: 4px;
+      -webkit-transition: 0.4s;
+      -o-transition: 0.4s;
+      transition: 0.4s;
+      font-family: NotoSans;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      outline: none; }
+      .form-control .form-row input:hover, .form-control .form-row input:focus, .form-control .form-row input:active {
+        -webkit-box-shadow: 0 0 5px #37718e;
+        box-shadow: 0 0 5px #37718e;
+        border: 1px solid #37718e; }
+      .form-control .form-row input[type='number'] {
+        -moz-appearance: textfield; }
+        .form-control .form-row input[type='number']::-webkit-outer-spin-button, .form-control .form-row input[type='number']::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0; }
+    .form-control .form-row textarea {
+      width: 100%;
+      float: left;
+      padding: 8px 10px;
+      border: 1px solid #d1d1d1;
+      border-radius: 4px;
+      -webkit-transition: 0.4s;
+      -o-transition: 0.4s;
+      transition: 0.4s;
+      font-family: NotoSans;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      outline: none;
+      resize: none;
+      min-height: 80px; }
+      .form-control .form-row textarea:hover, .form-control .form-row textarea:focus, .form-control .form-row textarea:active {
+        -webkit-box-shadow: 0 0 5px #37718e;
+        box-shadow: 0 0 5px #37718e;
+        border: 1px solid #37718e; }
+  .form-control button {
+    width: 100%;
+    float: left;
+    padding: 6px 0;
+    margin-top: 15px;
+    background: #316672;
+    font-size: 14px;
+    font-family: NotoSans;
+    color: #ffffff;
+    border: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .form-control button:hover {
+      background: #485c7a;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      cursor: pointer; }

@@ -1,0 +1,42 @@
+<%- include('../includes/header.ejs') %>
+    <%-include('../includes/top-bar.ejs') %>
+    <div class="container">
+        <%-include('../includes/left-menu.ejs') %>
+        <div class="main-backgournd form-background style-1">
+            <div class="grid">
+                <div class="page-title">
+                    <h1>Add Paramter ID</h1>
+                </div>
+                <div class="form-control">
+                    <form action="/admin/add-pid" method="POST">
+                        <div class="form-row">
+                            <label for="pid">PID</label>
+                            <input type="text" name="pid" id="pid" placeholder="Type PID here...">
+                        </div>
+                        <div class="form-row">
+                            <label for="mode">Mode</label>
+                            <input type="number" name="mode" id="mode" placeholder="Type PID mode here...">
+                        </div>
+                        <div class="form-row">
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description" placeholder="Type PID description here..."></textarea>
+                        </div>
+                        <div class="form-row">
+                            <label for="minValue">Min Value</label>
+                            <input type="number" name="minValue" id="minValue" placeholder="Type min value here...">
+                        </div>
+                        <div class="form-row">
+                            <label for="maxValue">Max Value</label>
+                            <input type="number" name="maxValue" id="maxValue" placeholder="Type max value here...">
+                        </div>
+                        <div class="form-row">
+                            <label for="unit">Unit</label>
+                            <input type="text" name="unit" id="unit" placeholder="Type PID unit here...">
+                        </div>
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include('../includes/end.ejs') %>

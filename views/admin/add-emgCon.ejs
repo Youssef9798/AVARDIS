@@ -1,0 +1,44 @@
+<%- include('../includes/header.ejs') %>
+    <%-include('../includes/top-bar.ejs') %>
+    <div class="container">
+        <%-include('../includes/left-menu.ejs') %>
+        <div class="main-backgournd form-background style-1">
+            <div class="grid">
+                <div class="page-title">
+                    <h1>Add Emergency Contacts</h1>
+                </div>
+                <div class="form-control">
+                    <form action="/admin/add-emgCon" method="POST">
+                        
+                        <div class="form-row">
+                            <label for="phoneNo">Phone Number</label>
+                            <input type="number" name="phoneNo" id="phoneNo" placeholder="Type contact phone number here...">
+                        </div>
+    
+                        <div class="form-row">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Type contact first name here...">
+                        </div>
+                        
+                        <div class="form-row">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Type contact last name here...">
+                        </div>
+                        
+                        <div class="form-row">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" id="address" placeholder="Type contact address here...">
+                        </div>
+    
+                        <div class="form-row">
+                            <label for="userSSN">User SSN</label>
+                            <input type="number" name="userSNN" id="userssn" placeholder="Type user SSN here...">
+                        </div>
+    
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include('../includes/end.ejs') %>

@@ -1,0 +1,28 @@
+<header class="navbar">
+    <div class="top-menu">
+        <div class="logo-container">
+            <h1>AVARDIS</h1>
+        </div>
+        <div class="top-bar">
+            <div class="search-bar">
+                <% if (isAuth) { %>
+                    <form>
+                        <input type="search" placeholder="Type here to find..">
+                        <button type="submit"><i><i class="fas fa-search"></i></i></button>
+                    </form>
+                <% } %>
+            </div>
+            <% if (isAuth) { %>
+                <ul>
+                    <!-- <li><a href="/login">Login</a></li> -->
+                    <li>
+                        <form action="/logout" method="POST">
+                            <button class="logout-btn">Logout<i class="fas fa-sign-out-alt"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            <% } %>
+        </div>
+    </div>
+</header>
+<!-- <a href="/products" class="<%= path==='/products' ? 'active' : '' %>">Products</a> -->

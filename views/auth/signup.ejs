@@ -1,0 +1,45 @@
+<%- include('../includes/header.ejs') %>
+        <div class="container-login">
+            <div class="form-background-2 login-container">
+                <!-- <div class="grid"> -->
+                <div class="login-message">
+                    <h1>AVARDIS</h1>
+                    <p>AVARDIS is an integrated device of hardware and software resources helps you by tracking your car and monitor your car performance and detect car's diagnostics</p>
+                </div>
+                <div class="login-form signup-form">
+                    <div class="login-bottom">
+                        <div class="login-header">
+                            <h1>AVARDS Admin Sign Up</h1>
+                        </div>
+                        <div class="login-margin">                            
+                            <form action="/signup" method="POST">
+                                <div class="login-form-row">
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username" id="username">
+                                </div>
+                                <div class="login-form-row">
+                                    <label for="email">E-Mail</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div class="login-form-row">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password">
+                                </div>
+                                <div class="login-form-row">
+                                    <label for="confirmedPassword">Confirm Password</label>
+                                    <input type="password" name="confirmedPassword" id="confirmedPassword">
+                                </div>
+                                <div class="login-form-row">
+                                    <a href="/login" class="have-btn">Have one?</a>
+                                </div>
+                                <div class="login-form-row">
+                                    <button type="submit">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+<%- include('../includes/end.ejs') %>

@@ -1,0 +1,68 @@
+<%- include('../includes/header.ejs') %> <%-include('../includes/top-bar.ejs')
+%>
+<div class="container">
+  <%-include('../includes/left-menu.ejs') %>
+  <div class="main-backgournd form-background style-1">
+    <div class="grid">
+      <div class="page-title">
+        <h1>PIDs Table</h1>
+      </div>
+      <div class="table-container">
+        <div class="table">
+          <div class="table-header">
+            <div class="table-header-cell">
+              PID
+            </div>
+            <div class="table-header-cell">
+              Mode
+            </div>
+            <div class="table-header-cell">
+              Description
+            </div>
+            <div class="table-header-cell">
+              Min Value
+            </div>
+            <div class="table-header-cell">
+              Max Value
+            </div>
+            <div class="table-header-cell">
+              Unit
+            </div>
+          </div>
+          <% if (pidsData.length > 0) { %>
+          <div class="table-body">
+            <% pidsData.forEach(pidD => { %>
+            <div class="table-row">
+              <div class="table-body-cell">
+                <%= pidD.PID %>
+              </div>
+              <div class="table-body-cell">
+                <%= pidD.mode %>
+              </div>
+              <div class="table-body-cell dec-cel">
+                <%= pidD.description %>
+              </div>
+              <div class="table-body-cell">
+                <%= pidD.min_value %>
+              </div>
+              <div class="table-body-cell">
+                <%= pidD.max_value %>
+              </div>
+              <div class="table-body-cell">
+                <%= pidD.unit %>
+              </div>
+            </div>
+            <% }); %>
+          </div>
+          <% } %>
+        </div>
+        <% if (pidsData.length == 0){ %>
+        <div class="empty-table">
+          <p>No PID's data saved yet</p>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('../includes/end.ejs') %>

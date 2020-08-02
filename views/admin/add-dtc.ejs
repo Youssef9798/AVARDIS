@@ -1,0 +1,26 @@
+<%- include('../includes/header.ejs') %>
+    <%-include('../includes/top-bar.ejs') %>
+    <div class="container">
+        <%-include('../includes/left-menu.ejs') %>
+        <div class="main-backgournd form-background style-1">
+            <div class="grid">
+                <div class="page-title">
+                    <h1>Add Diagnostic Trouble Code</h1>
+                </div>
+                <div class="form-control">
+                    <form action="/admin/add-dtc" method="POST">
+                        <div class="form-row">
+                            <label for="code">Code</label>
+                            <input type="number" name="code" id="code" placeholder="Type DTC code here...">
+                        </div>
+                        <div class="form-row">
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description" placeholder="Type DTC description here..."></textarea>
+                        </div>
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include('../includes/end.ejs') %>
